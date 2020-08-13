@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "module":"commonjs",
+        "removeComments": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports":true,
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+}
