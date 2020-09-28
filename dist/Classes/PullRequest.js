@@ -143,7 +143,8 @@ var default_1 = (function () {
             var PRReview = new PullRequestReview_1["default"](data[i]);
             if (PRReview.state === "APPROVED" &&
                 (PRReview.author_association === "OWNER" ||
-                    PRReview.author_association === "COLLABORATOR"))
+                    PRReview.author_association === "COLLABORATOR" ||
+                    this.author_association === "MEMBER"))
                 return true;
         }
     };

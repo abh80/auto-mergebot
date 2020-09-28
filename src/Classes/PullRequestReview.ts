@@ -18,9 +18,14 @@ export default class implements Pr_Review {
     this.pull_request_url = data.pull_request_url;
     this.author_association = data.author_association;
   }
-  checkToBeApproved(){
-      if(this.state.toUpperCase() !== 'APPROVED')return false;
-      if(this.author_association === 'OWNER' || this.author_association === 'COLLABORATOR')return true;
-      else return false;
+  checkToBeApproved() {
+    if (this.state.toUpperCase() !== "APPROVED") return false;
+    if (
+      this.author_association === "OWNER" ||
+      this.author_association === "COLLABORATOR" ||
+      this.author_association === "MEMBER"
+    )
+      return true;
+    else return false;
   }
 }

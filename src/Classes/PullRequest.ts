@@ -114,7 +114,8 @@ export default class implements pull_request {
       if (
         PRReview.state === "APPROVED" &&
         (PRReview.author_association === "OWNER" ||
-          PRReview.author_association === "COLLABORATOR")
+          PRReview.author_association === "COLLABORATOR" ||
+          this.author_association === "MEMBER")
       )
         return true;
     }
