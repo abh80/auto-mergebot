@@ -21,7 +21,7 @@ const mergeOptions = {
 	mentions:true, //wether to mention the PR author on #Commenting
 	on_create_comment: 'thx for submitting this PR', // the comment to POST when PR is created
 	merge_ask_comment: 'Looks good lets merge this PR , Post a comment saying > ready to merge', // the comment to POST when PR is approved by owner or collaborator
-	merge_confirm_comment: 'ready to merge' // the confirm comment by the user to merge the PR
+	merge_confirm_comment: 'ready to merge', // the confirm comment by the user to merge the PR
 	commit_title: true // If left true bot will add its own commit title when merging that is `Merged PR #{PR Numeber}`
 }
 const client = new mergebot.Client(clientOptions,mergeOptions) //here we Go bot will start to run if no errors are in console and no efforts needed !!
