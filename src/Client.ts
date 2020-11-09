@@ -1,5 +1,5 @@
 import EventHandeler from "./EventHandeler";
-import * as config from "./config";
+import * as config from "./config"
 class Client {
   EventHandeler: EventHandeler;
   ClientOptions: config.ClientOptions;
